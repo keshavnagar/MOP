@@ -35,6 +35,10 @@ nav {
   font-weight: 700;
 }
 
+.hamburger{
+  display: none;
+}
+
 .logo {
   width: 150px;
   height: auto; /* Automatically adjust height based on width */
@@ -142,6 +146,56 @@ nav {
     opacity: 50%;
   }
 }
+
+/* media query for mobile */
+@media (max-width : 768px){
+  nav{
+    display: none;
+  }
+ 
+  .hamburger {
+    display: block;
+    font-size: 50px;
+    color:  #0029bce0;
+    z-index: 2;
+    
+  }
+  .logo-nav{
+    display: flex;
+    gap: 750px;
+  }
+  .responsive-nav{
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    width: 75%;
+    background-color: #9d9d9d ;
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 100px;
+  }
+  .hamburgerToggle{
+    background-color: #9d9d9d;
+    transform: rotate(45deg);
+  }
+
+ 
+ 
+
+
+  nav li {
+    font-size: 40px;
+    background-color: #9d9d9d ;
+    margin-top: 4%;
+    margin-left: 10%;
+  }
+
+}
+
+
 
 /* home page complete */
 
