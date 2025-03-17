@@ -35,7 +35,7 @@ nav {
   font-weight: 700;
 }
 
-.hamburger{
+.hamburger {
   display: none;
 }
 
@@ -113,6 +113,15 @@ nav {
   font-family: "Fira Code", monospace;
   font-size: 20px;
   color: #4e4e4e;
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .svg {
@@ -123,21 +132,21 @@ nav {
   margin-bottom: -10px;
 }
 
-.svg svg{
+.svg svg {
   animation: bounce 2s infinite;
 }
 
 .svg svg:nth-child(1) {
-    animation-delay: .2s;
+  animation-delay: 0.2s;
 }
 
-.svg svg:nth-child(2)
-{
+.svg svg:nth-child(2) {
   animation-delay: 0s;
 }
 
 @keyframes bounce {
-  0% , 100% {
+  0%,
+  100% {
     transform: translateY(0);
     opacity: 1;
   }
@@ -148,28 +157,36 @@ nav {
 }
 
 /* media query for mobile */
-@media (max-width : 768px){
-  nav{
+@media (max-width: 768px) {
+  .home {
+    height: 2000px;
+  }
+
+  .logo-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav {
     display: none;
   }
- 
+
   .hamburger {
     display: block;
     font-size: 50px;
-    color:  #0029bce0;
+    color: #0029bce0;
     z-index: 2;
-    
   }
-  .logo-nav{
+  .logo-nav {
     display: flex;
-    gap: 750px;
+    gap: 540px;
+    margin-left: 130px;
   }
-  .responsive-nav{
+  .responsive-nav {
     position: fixed;
     right: 0px;
     height: 100%;
     width: 75%;
-    background-color: #9d9d9d ;
+    background-color: #9d9d9d;
     display: flex;
     flex-direction: column;
     top: 0px;
@@ -177,39 +194,89 @@ nav {
     align-items: flex-start;
     gap: 100px;
   }
-  .hamburgerToggle{
+  .hamburgerToggle {
     background-color: #9d9d9d;
     transform: rotate(45deg);
   }
 
- 
- 
-
-
   nav li {
     font-size: 40px;
-    background-color: #9d9d9d ;
+    background-color: #9d9d9d;
     margin-top: 4%;
     margin-left: 10%;
   }
 
+  /* ab ate hai hone page ke intro-profile part me  */
+  .intro-profile {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    height: 1600px;
+  }
+
+  .intro {
+    margin-top: 100px;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .intro li {
+    width: 700px;
+    display: flex;
+  }
+
+  .intro .name {
+    font-size: 100px;
+    letter-spacing: 4px;
+  }
+
+  .intro .position {
+    font-size: 70px;
+  }
+
+  .intro .short-desc {
+    max-width: 700px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+  }
+
+  .intro .resume {
+    height: 60px;
+    font-size: 30px;
+  }
+  .profilePhoto {
+    width: 700px;
+    height: 700px;
+  }
+
+  .scroll {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    height: 600px;
+    width: 1050px;
+    z-index: -1;
+    margin-bottom: 200px;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
 }
-
-
 
 /* home page complete */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.webDevPtoggle{
+  display: none;
+}
