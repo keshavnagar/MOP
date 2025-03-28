@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Example</title>
+    <style>
+        /* Pehle P hidden rahega */
+        #webDevP {
+            display: none;
+        }
+
+        /* Jab toggle class lagegi, tab show hoga */
+        .webDevPtoggle {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="web-dev">
+        <h1 class="webDevH1">Web Developer</h1>
+        <p id="webDevP">I am more focused on front-end development but learn backend and database also because my interest is to build a full project from front-end to backend.</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const h1 = document.querySelector(".webDevH1");
+            const p = document.querySelector("#webDevP");
+
+            h1.addEventListener("click", () => {
+                if (p.style.display === "none") {
+                    p.style.display = "block";
+                } else {
+                    p.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
