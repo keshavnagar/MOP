@@ -99,8 +99,9 @@ nav {
 }
 
 .profilePhoto {
-  width: 320.8px;
-  height: 340x;
+  width: 325px;
+  height: 325px;
+  border-radius: 50%;
 }
 
 .scroll {
@@ -408,15 +409,10 @@ nav {
 
 /* skills section */
 
- 
-
 .skills {
-  
 }
 
-.skill-heading{
-
-  
+.skill-heading {
   margin-left: 245px;
   border: 1px solid #2f34e7;
   border-radius: 40px;
@@ -425,22 +421,21 @@ nav {
   margin-bottom: 20px;
 }
 
-.skill-container{
-
- background-color: #4e4e4e;
- max-width: 1000px;
- margin: auto;
- display: flex;
- flex-wrap: wrap;
- justify-content: space-evenly;
- padding: 20px;
- row-gap: 100px;
- column-gap: 200px;
- margin-bottom: 100px;
- border-radius: 10px;
+.skill-container {
+  background-color: #4e4e4e;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  row-gap: 100px;
+  column-gap: 200px;
+  margin-bottom: 100px;
+  border-radius: 10px;
 }
 
-.skill-container>div{
+.skill-container > div {
   width: 400px;
   height: 230px;
   background: rgba(115, 115, 115, 0.941);
@@ -453,50 +448,50 @@ nav {
   align-items: center;
   position: relative;
   gap: 20px;
-  
 }
 
-.skill-container>div:hover{
+.skill-container > div:hover {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
   border: 0px solid black;
 }
-.skill-container>div>h1{
+.skill-container > div > h1 {
   background: transparent;
 }
 
-
-
-.skill-container>div>.content{
+.skill-container > div > .content {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease-in-out , visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   background-color: transparent;
   display: flex;
   flex-wrap: wrap;
   width: 240px;
   column-gap: 10px;
+  justify-content: space-between;
+  row-gap: 10px;
+  margin-bottom: 10px;
+  row-gap: 5px;
 }
 
-.skill-container>div:hover>.content{
- opacity: 1;
- visibility: visible;
- background-color: transparent;
- 
+.skill-container > div:hover > .content {
+  opacity: 1;
+  visibility: visible;
+  background-color: transparent;
+  row-gap: 5px;
 }
 
 /* .skill-container>div>h1 {
   width: 150px;
 } */
 
-.content-logo{
+.content-logo {
   display: flex;
   gap: 5px;
   margin-top: 10px;
   background-color: transparent;
-
 }
 
-.content-logo>img{
+.content-logo > img {
   background-color: transparent;
   width: 24px;
   height: 24px;
@@ -504,11 +499,238 @@ nav {
   padding-top: 1px;
 }
 
-.content>h2{
+.content > h2 {
   background-color: #9d9d9d;
   height: 30px;
   width: auto;
   padding-left: 5px;
-  padding-right: 5px;
+  padding-right: 6px;
   border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.skill-container div h1:nth-child(2) {
+  position: absolute;
+  left: 150px;
+  text-transform: capitalize;
+  display: flex;
+  gap: 20px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  width: 200px;
+  font-size: 20px;
+  border: 2px solid #898989;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 160px;
+  border-radius: 10px;
+}
+.skill-container > div:hover > h1:nth-child(2) {
+  opacity: 0;
+}
+
+.skill-container div h1:nth-child(2) img {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  padding-top: 3px;
+}
+
+.back div h2:nth-child(3) img {
+  width: 35px;
+  height: 35px;
+  padding-left: 0px;
+}
+
+/* responsive ness skill section */
+
+/* projects */
+
+.projects h1 {
+  margin-left: 245px;
+  border: 1px solid #2f34e7;
+  border-radius: 40px;
+  width: fit-content;
+  padding: 10px 40px 10px 40px;
+  margin-bottom: 20px;
+}
+
+.projects-container {
+  background-color: #2f34e7;
+  max-width: 1000px;
+  height: auto;
+  margin: auto;
+  border-radius: 20px;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.main-projects {
+  background-color: #2f34e7;
+  max-width: 1000px;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.main-projects div {
+  background-color: #9d9d9d;
+  width: 300px;
+  height: 389px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.main-projects div img {
+  height: 150px;
+  width: 280px;
+  border-radius: 12px;
+}
+
+.main-projects div p {
+  background-color: transparent;
+  text-align: justify;
+  width: 280px;
+}
+
+.main-projects div h2 {
+  background-color: transparent;
+  width: 280px;
+}
+
+.main-projects div ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 12px;
+  background-color: transparent;
+  width: 100%;
+}
+
+.main-projects div li {
+  width: auto;
+  height: 20px;
+  background-color: #2f34e7;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.main-projects div p img {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+}
+
+.main-projects div nav {
+  background-color: transparent;
+  display: flex;
+  width: 300px;
+  font-size: 18px;
+}
+
+.main-projects div nav p {
+  display: flex;
+  gap: 10px;
+  font-weight: 2;
+}
+.Aarogya-guide-img {
+  margin-top: 10px;
+}
+
+.projects-container h1 {
+  margin-top: 20px;
+  margin-left: 0px;
+  border-radius: 10px;
+}
+
+.other-projects {
+  background-color: #2f34e7;
+  max-width: 1000px;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.other-projects div {
+  background-color: #9d9d9d;
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.other-projects div ul {
+  list-style: none;
+}
+
+.other-projects div h2 {
+  background-color: transparent;
+  width: 280px;
+  text-align: left;
+}
+
+.other-projects div p {
+  text-align: justify;
+  width: 280px;
+  background-color: transparent;
+}
+
+.other-projects div ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: transparent;
+}
+
+.other-projects div ul li {
+  background-color:  #2F34E7;
+  color: rgb(204, 204, 204);
+  width: auto;
+  height: 20px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+
+.other-projects div nav {
+  background-color: transparent;
+  display: flex;
+  width: 300px;
+  font-size: 18px;
+}
+
+.other-projects div nav p {
+  display: flex;
+  gap: 10px;
+  font-weight: 2;
+}
+
+.other-projects div nav img {
+  width: 20px;
+  height: 20px;
+  background: transparent;
 }
