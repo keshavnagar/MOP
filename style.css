@@ -627,12 +627,15 @@ nav {
   text-align: center;
   padding: 5px;
   border-radius: 10px;
+
 }
 
-.main-projects div p img {
+.main-projects div nav img {
   height: 20px;
   width: 20px;
   background-color: transparent;
+  border-radius: 0;
+  
 }
 
 .main-projects div nav {
@@ -734,3 +737,102 @@ nav {
   height: 20px;
   background: transparent;
 }
+
+
+/* contact me  */
+
+
+.cm-container{
+  background-color: #0653B1;
+  max-width: 1000px;
+  height: 585px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 200px;
+}
+
+.cm-container .contact{
+  height: 545px;
+  width: 460px;
+  border-radius: 20px;
+}
+
+.cm-container form {
+  height: 500px;
+  width: 400px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-left: 50px;
+  background-color: transparent;
+}
+
+form input {
+  width: 200px;
+  height: 40px;
+  padding-left: 20px;
+  border: 0px;
+  background-color: #FDFDFD;
+  border-radius: 10px;
+ 
+}
+
+form input::placeholder{
+  color: #adaaaa;
+}
+
+form input:nth-child(8){
+  padding-left: 0px;
+  background-color: #0653B1;
+  color: #FDFDFD;
+  width: 150px;
+}
+
+
+
+.cm-container .other{
+  height: 545px;
+  width: 460px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  text-transform: capitalize;
+  background-color: #d9d9d958;
+}
+
+.margin {
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.other img {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  margin-left: 0px;
+  background-color: transparent;
+}
+
+.other h1 {
+  background-color: transparent;
+  color: #fdf6f6;
+}
+
+
+
