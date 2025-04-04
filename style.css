@@ -85,7 +85,7 @@ nav {
 .resume {
   margin: 0 auto;
   height: 40px;
-  background-color: #0029bce0;
+  background-color: #0653b1;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -128,7 +128,7 @@ nav {
 .svg {
   display: flex;
   flex-direction: column;
-  color: #0029bce0;
+  color: #0653b1;
   gap: 0;
   margin-bottom: -10px;
 }
@@ -175,7 +175,7 @@ nav {
   .hamburger {
     display: block;
     font-size: 50px;
-    color: #0029bce0;
+    color: #0653b1;
     z-index: 2;
   }
   .logo-nav {
@@ -288,7 +288,7 @@ nav {
 .about-me > h2 {
   text-transform: uppercase;
   margin-left: 250px;
-  border: 1px solid #2f34e7;
+  border: 1px solid#0653B1;
   border-radius: 40px;
   display: flex;
   width: 200px;
@@ -310,11 +310,7 @@ nav {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 100px;
-  background: linear-gradient(
-    123deg,
-    rgba(47, 53, 231, 0.6),
-    rgba(10, 15, 152, 0.6)
-  );
+  background: linear-gradient(123deg, #0653b1, #769ecf);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   height: 600px;
@@ -414,7 +410,7 @@ nav {
 
 .skill-heading {
   margin-left: 245px;
-  border: 1px solid #2f34e7;
+  border: 1px solid#0653B1;
   border-radius: 40px;
   width: fit-content;
   padding: 10px 40px 10px 40px;
@@ -550,7 +546,7 @@ nav {
 
 .projects h1 {
   margin-left: 245px;
-  border: 1px solid #2f34e7;
+  border: 1px solid #0653b1;
   border-radius: 40px;
   width: fit-content;
   padding: 10px 40px 10px 40px;
@@ -558,7 +554,7 @@ nav {
 }
 
 .projects-container {
-  background-color: #2f34e7;
+  background-color: #0653b1;
   max-width: 1000px;
   height: auto;
   margin: auto;
@@ -569,7 +565,7 @@ nav {
 }
 
 .main-projects {
-  background-color: #2f34e7;
+  background-color: #0653b1;
   max-width: 1000px;
   height: auto;
   margin: auto;
@@ -622,12 +618,11 @@ nav {
 .main-projects div li {
   width: auto;
   height: 20px;
-  background-color: #2f34e7;
+  background-color: #0653b1;
   color: white;
   text-align: center;
   padding: 5px;
   border-radius: 10px;
-
 }
 
 .main-projects div nav img {
@@ -635,7 +630,6 @@ nav {
   width: 20px;
   background-color: transparent;
   border-radius: 0;
-  
 }
 
 .main-projects div nav {
@@ -661,7 +655,7 @@ nav {
 }
 
 .other-projects {
-  background-color: #2f34e7;
+  background-color: #0653b1;
   max-width: 1000px;
   height: auto;
   margin: auto;
@@ -710,14 +704,13 @@ nav {
 }
 
 .other-projects div ul li {
-  background-color:  #2F34E7;
+  background-color: #0653b1;
   color: rgb(204, 204, 204);
   width: auto;
   height: 20px;
   padding: 5px;
   border-radius: 10px;
 }
-
 
 .other-projects div nav {
   background-color: transparent;
@@ -738,14 +731,21 @@ nav {
   background: transparent;
 }
 
-
 /* contact me  */
 
+.contact-heading {
+  margin-left: 245px;
+  border: 1px solid #0653b1;
+  border-radius: 40px;
+  width: fit-content;
+  padding: 10px 40px 10px 40px;
+  margin-bottom: 20px;
+}
 
-.cm-container{
-  background-color: #0653B1;
+.cm-container {
+  background-color: #0653b1;
   max-width: 1000px;
-  height: 585px;
+  height: auto;
   margin: auto;
   margin-top: 20px;
   display: flex;
@@ -754,10 +754,10 @@ nav {
   justify-content: space-evenly;
   padding: 20px;
   border-radius: 20px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
-.cm-container .contact{
+.cm-container .contact {
   height: 545px;
   width: 460px;
   border-radius: 20px;
@@ -783,25 +783,22 @@ form input {
   height: 40px;
   padding-left: 20px;
   border: 0px;
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
   border-radius: 10px;
- 
 }
 
-form input::placeholder{
+form input::placeholder {
   color: #adaaaa;
 }
 
-form input:nth-child(8){
+form input:nth-child(8) {
   padding-left: 0px;
-  background-color: #0653B1;
-  color: #FDFDFD;
+  background-color: #0653b1;
+  color: #fdfdfd;
   width: 150px;
 }
 
-
-
-.cm-container .other{
+.cm-container .other {
   height: 545px;
   width: 460px;
   border-radius: 20px;
@@ -834,5 +831,92 @@ form input:nth-child(8){
   color: #fdf6f6;
 }
 
+/* footer  */
 
+.footerContainer {
+  background-color: #0653b1;
+  max-width: 1040px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px 0px 20px 0px;
+  margin: auto;
+  row-gap: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.box {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+}
 
+.footerContainer .box:nth-child(1) {
+ 
+  flex-basis: 15%;
+}
+
+.footerContainer .box:nth-child(2) {
+ 
+  flex-basis: 15%;
+}
+
+.footerContainer .box:nth-child(3) {
+  
+  flex-basis: 50%;
+}
+
+.footerContainer .box:nth-child(4) {
+  flex-basis: 90%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 77px;
+  height: 30px;
+  
+}
+
+.box:nth-child(4) img{
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  padding-top: 5px;
+}
+
+.box li {
+  color: white;
+  list-style: none;
+  background-color: transparent;
+  margin-top: 5px;
+}
+
+.box h1 {
+  color: white;
+  background-color: transparent;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.box p,
+.box p span {
+  background-color: transparent;
+}
+
+.box p {
+  margin-top: 10px;
+  font-family: "Belleza", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: #fdf6f6;
+}
+
+.box p span{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: #ffffff72;
+    -webkit-text-stroke: 1px #bebaba;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
