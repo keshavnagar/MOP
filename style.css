@@ -46,7 +46,7 @@ nav {
 
 .intro-profile {
   display: flex;
-  gap: 350px;
+  gap: 340px;
   padding: 20px;
   max-width: 1000px;
   margin: 0 auto;
@@ -160,13 +160,22 @@ nav {
 /* media query for mobile */
 @media (max-width: 768px) {
   .home {
-    height: 2000px;
-    margin-bottom: 0px;
+    height: 1850px;
+    display: flex;
+    gap: 10px;
+    justify-content:flex-start;
+  }
+
+  .logo {
+    width: 230px;
+    height: auto;
   }
 
   .logo-nav {
     display: flex;
     justify-content: space-around;
+    width: 970px;
+    margin-bottom: 50px;
   }
   nav {
     display: none;
@@ -174,15 +183,11 @@ nav {
 
   .hamburger {
     display: block;
-    font-size: 50px;
+    font-size: 80px;
     color: #0653b1;
     z-index: 2;
   }
-  .logo-nav {
-    display: flex;
-    gap: 540px;
-    margin-left: 130px;
-  }
+
   .responsive-nav {
     position: fixed;
     right: 0px;
@@ -210,13 +215,12 @@ nav {
 
   /* ab ate hai hone page ke intro-profile part me  */
   .intro-profile {
-    margin-top: 100px;
     width: 1000px;
     display: flex;
     flex-direction: column;
     gap: 100px;
     align-items: center;
-    height: 1600px;
+    
   }
 
   .intro {
@@ -248,8 +252,8 @@ nav {
   }
 
   .intro .resume {
-    height: 60px;
-    font-size: 30px;
+    height: 90px;
+    font-size: 35px;
   }
   .profilePhoto {
     width: 700px;
@@ -261,10 +265,9 @@ nav {
     justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
-    height: 600px;
+    height: auto;
     width: 1050px;
     z-index: -1;
-    margin-bottom: 200px;
     opacity: 1;
     visibility: visible;
     transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
@@ -280,21 +283,19 @@ nav {
 /* home page complete */
 
 .about-me {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
 }
 
 .about-me > h2 {
   text-transform: uppercase;
-  margin-left: 250px;
+  margin-left: 240px;
   border: 1px solid#0653B1;
   border-radius: 40px;
   display: flex;
+  justify-content: center;
   width: 200px;
-  padding-left: 70px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 .container {
@@ -364,24 +365,26 @@ nav {
 /* media query for mobile for about me section  */
 
 @media (max-width: 768px) {
-  .about-me {
-    margin-top: 25px;
+  .about-me > h2 {
+    text-transform: uppercase;
+    margin-left: 170px;
+    border: 1px solid#0653B1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    width: 660px;
+    padding: 20px;
   }
 
-  .about-me > h2 {
-    margin-left: 50%;
-    margin-bottom: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
 
   .container {
     padding-top: 40px;
     padding-bottom: 40px;
     height: 1400px;
     width: 700px;
-    margin-left: 50%;
-    margin-right: 50%;
+    margin-left: 46%;
+    padding-left: 0px;
+    padding-right: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -853,17 +856,14 @@ form input:nth-child(8) {
 }
 
 .footerContainer .box:nth-child(1) {
- 
   flex-basis: 15%;
 }
 
 .footerContainer .box:nth-child(2) {
- 
   flex-basis: 15%;
 }
 
 .footerContainer .box:nth-child(3) {
-  
   flex-basis: 50%;
 }
 
@@ -873,10 +873,9 @@ form input:nth-child(8) {
   justify-content: flex-start;
   gap: 77px;
   height: 30px;
-  
 }
 
-.box:nth-child(4) img{
+.box:nth-child(4) img {
   background-color: transparent;
   width: 20px;
   height: 20px;
@@ -911,12 +910,12 @@ form input:nth-child(8) {
   color: #fdf6f6;
 }
 
-.box p span{
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
-    font-style: normal; 
-    color: #ffffff72;
-    -webkit-text-stroke: 1px #bebaba;
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+.box p span {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff72;
+  -webkit-text-stroke: 1px #bebaba;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
